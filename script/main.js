@@ -40,11 +40,12 @@ async function fetchUrlPokemon(){
    
     card.style.backgroundColor = colors;
     ps.innerHTML = data.stats[randomStats].base_stat;
+    imgPokemon.setAttribute("src", data.sprites.front_default); 
     data.name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
     namePokemon.innerHTML = data.name;
     habilidad1. innerHTML = data.abilities[0].ability.name.charAt(0).toUpperCase() + data.abilities[0].ability.name.slice(1);
     habilidad2. innerHTML = data.abilities[1].ability.name.charAt(0).toUpperCase() + data.abilities[1].ability.name.slice(1);
-    imgPokemon.setAttribute("src", data.sprites.front_default); 
+    
     
             
     console.log(data)
