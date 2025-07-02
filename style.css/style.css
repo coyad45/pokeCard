@@ -1,0 +1,84 @@
+*{
+    --RojoPokemon: #FF0000 ;
+    --AzulPokemon: #0000FF ;
+    --VerdePokemon: #008000 ;
+    --AmarilloPokemon: #FFFF00 ;
+    --NegroPokemon: #000000 ;
+    --BlancoPokemon: #FFFFFF; 
+    --electrico: #ecb223;
+    --planta: #e5bb81;
+    --oscuridad: #2b0d7a;
+    --fuego: #a87358;
+    --Agua: #b3aac3;
+    --lucha: #315759;
+    
+}
+body{
+    display: grid;
+    place-content: center;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+   
+}
+
+.card-display{
+    background-color: #2b0d7a;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 10px solid #ecb223;
+    position: relative;
+}
+
+.card-display__description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px;
+}
+.card-display_ps{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.card-display_ps p{
+    margin-bottom: 25px;
+}
+.pokemon-img_container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #ecb223;
+    border-radius: 15px 0px 15px 0px;
+    margin: 0 16px;
+}
+.pokemon-img_container img{
+    width: 250px;
+    height: 250px;
+}
+.powers{
+    
+    max-width: 500px;
+    
+    margin: 16px;
+    overflow: hidden;
+    height: 250px;
+}
+.powers-hab1{
+    margin: 0 16px;
+}
+.powers-hab2{
+    margin: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
